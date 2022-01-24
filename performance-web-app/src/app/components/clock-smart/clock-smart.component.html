@@ -1,0 +1,12 @@
+{{ doCheck() }}
+<mat-card class="clock">
+  <mat-card-title>
+    Smart Clock
+  </mat-card-title>
+  <mat-card-content>
+    <h2>{{ getTime() }}</h2>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="start()">Start</button>
+  </mat-card-actions>
+</mat-card>

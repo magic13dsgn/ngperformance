@@ -1,0 +1,15 @@
+<section>
+  <button mat-button (click)="changePlayer(0)">Change player 1</button>
+  <button mat-button (click)="changePlayer(1)">Change player 2</button>
+</section>
+<section>
+  <mpw-player
+    *ngFor="let player of players"
+    [playerModel]="player"
+  >
+  </mpw-player>
+</section>
+<section>
+  <mpw-random-player></mpw-random-player>
+</section>
+
